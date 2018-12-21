@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- common.properties파일 set -->
+  <properties resource="config/common.properties">
+  	<property name="driver" value="${driver}"/>
+    <property name="url" value="${url}"/>
+    <property name="username" value="${username}"/>
+    <property name="password" value="${password}"/>
+  </properties>
+  
+  <!-- interface와 mapper를 연결 -->
+  <typeAliases>
+  	<typeAlias alias="Auth" type="com.mooop.dao.AUTH"/>
+  </typeAliases>
+  
+  <!-- JDBC 연결 -->
+  <environments default="development">
+    <environment id="development">
+      <transactionManager type="JDBC"/>
+      <dataSource type="POOLED">
+        <property name="driver" value="${driver}"/>
+        <property name="url" value="${url}"/>
+        <property name="username" value="${username}"/>
+        <property name="password" value="${password}"/>
+      </dataSource>
+    </environment>
+  </environments>
+  
+  <mappers>
+    <mapper resource="com/mooop/qry/AUTH.xml"/>
+  </mappers>
+</configuration>
