@@ -1,0 +1,28 @@
+
+
+
+mysql:
+  url: jdbc:mysql://localhost:3306/TESTDB?useSSL=false
+  driverClassName: com.mysql.jdbc.Driver
+  username: cwkim
+  password: 1111
+
+
+
+spring:
+  thymeleaf:
+    cache: false
+
+
+security:
+  basic:
+    enabled: true
+      
+
+  
+# Common  
+server:
+  servlet:
+    context-path: /sss
+  port: 8080
+       
