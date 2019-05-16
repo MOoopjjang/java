@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta id="_csrf" name="_csrf" th:content="${_csrf.token}"/>
+		<!-- default header name is X-CSRF-TOKEN -->
+		<meta id="_csrf_header" name="_csrf_header" th:content="${_csrf.headerName}"/>
+	</head>
+	<body>
+	<h1>사용자 등록</h1>
+	<form method="post" action="/sec/registeryproc">
+		<p>
+			<label for="username">Username</label> <input type="text" id="username" name="username" value="username" />
+		</p>
+		<p>
+			<label for="password">Password</label> <input type="password" id="password" name="password" value="password" />
+		</p>
+		<p>
+			<label for="token">token</label> <input type="text" id="token" name="token" value="token" />
+		</p>
+		<p>
+			<label for="ROLE">ROLE</label> <input type="text" id="role" name="role" value="role(ADMIN , USER , GUEST )" />
+		</p>
+		<button id="btn_registery" type="button" class="btn">registery</button>
+	</form>
+	</body>
+	
+	
+	<script src="webjars/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	
+	
+		$(document).ajaxSend(function(e, xhr, options) {
+		  var sid = $("meta[name='csrf-token']").attr("content");
+		  xhr.setRequestHeader("X-CSRF-Token", sid);
+		});
+	
+	
+		function getContextPath(){
+	        var offset=location.href.indexOf(location.host)+location.host.length;
+	        var ctxPath=location.href.substring(offset,location.href.indexOf('/',offset+1));
+	        return ctxPath;
+		}
+
+	
+	    var CONTEXT_PATH = getContextPath()
+	    console.log(CONTEXT_PATH)
+		var $btn_registery =document.getElementById("btn_registery")
+		var $username = document.getElementById("username")
+		var $password = document.getElementById("password")
+		var $token = document.getElementById("token")
+		var $role = document.getElementById("role")
+		
+		$btn_registery.onclick = function(e){
+			console.log($username.value)
+			data = {
+					"userid":$username.value,
+					"password":$password.value,
+					"token":$token.value,
+					"role":$role.value
+			}
+			
+			
+			$.ajax({
+				url:CONTEXT_PATH+"/admin/registery",
+				type:"POST",
+				data : JSON.stringify(data),
+				dataType:"json",
+				contentType:"application/json",
+		       success : function(response){
+		    	   alert(response.result)
+		    	   
+		    	   window.location.href="login"
+		       },
+		       error:function(response){
+		    	   alert('error')
+		       }
+			})
+			
+			
+		}
+	    
+	    
+	    var token = $("meta[name='_csrf']").attr("content");
+	    var header = $("meta[name='_csrf_header']").attr("content");
+	    $(function() {
+	        $(document).ajaxSend(function(e, xhr, options) {
+	            xhr.setRequestHeader(header, token);
+	        });
+	    });  
+	    
+	</script>
+</html>

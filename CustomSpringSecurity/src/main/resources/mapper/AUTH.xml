@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mooop.sec.dao.AuthDao">
+	
+	<resultMap type="hashmap" id="auth_info">
+		<result property="username" column="userid" />
+		<result property="password" column="password" />
+		<result property="token" column="token" />
+		<result property="role" column="role" />
+	</resultMap>
+	
+	
+	<select id="getUserAuthInfo" parameterType="string" resultMap="auth_info">
+		SELECT userid,password,token,role FROM BOOK_AUTH WHERE userid=#{userid}
+	</select>
+	
+	<select id="getAllUserAuthInfo" parameterType="string" resultMap="auth_info">
+		SELECT userid,password,token,role FROM BOOK_AUTH
+	</select>
+	
+	<insert id="insertUserInfo" parameterType="hashmap">
+		INSERT INTO BOOK_AUTH 
+		(
+			userid,
+			password,
+			token,
+			role
+		)VALUES
+		(
+			#{userid},
+			#{password},
+			#{token},
+			#{role}
+		)
+	</insert>
+	
+	<delete id="deleteUserInfo" parameterType="string">
+		DELETE FROM BOOK_AUTH WHERE userid=#{userid}
+	</delete>
+	
+</mapper>
