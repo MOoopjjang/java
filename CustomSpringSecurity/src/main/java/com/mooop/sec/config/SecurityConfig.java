@@ -39,23 +39,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 			.antMatchers("/**").permitAll()
 			.and().csrf();
 
-		http.formLogin().loginPage("/login")
-			.usernameParameter("username")
-			.passwordParameter("password")
-			.loginProcessingUrl("/loginproc")
-			.defaultSuccessUrl("/main")
-			.failureUrl("/loginfail")
-			.and()
-			.logout()
-			.logoutSuccessUrl("/login")
-			.invalidateHttpSession(true)
-			.deleteCookies("JSESSIONID");
 		
+		http.logout()
+					.logoutSuccessUrl("/login")
+					.invalidateHttpSession(true)
+					.deleteCookies("JSESSIONID");
 		
 		/**
 		 * Custom Filter 적용
 		 * 
-		 *  - Spring Securit에서 제공하는 UsernamePasswordAuthenticationFilter 대신에
+		 *  - Login 기능을 Spring Securit에서 제공하는 UsernamePasswordAuthenticationFilter 대신에
 		 *    Custom한 UsernamePasswordTokenAuthenticationFilter를 사용한다.
 		 *    
 		 */
@@ -81,6 +74,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 		UsernamePasswordTokenAuthenticationFilter filter =  new UsernamePasswordTokenAuthenticationFilter();
 		filter.setAuthenticationManager(authenticationManagerBean());
 		
+		/**
+		 * login진행 IF지정.
+		 * 
+		 * */
 		filter.setFilterProcessesUrl("/loginproc");
 		filter.setUsernameParameter("username");
 		filter.setPasswordParameter("password");
