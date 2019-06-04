@@ -23,7 +23,7 @@ public class DatabaseConfig {
 	
 	
 	
-	@Bean(name="dataSource")
+	@Bean(name="dataSource", destroyMethod="postDeregister")
 	public DataSource dataSource() {
 		
 		BasicDataSource datasource = new BasicDataSource();
