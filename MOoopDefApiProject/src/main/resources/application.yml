@@ -1,0 +1,16 @@
+
+
+
+mysql:
+  url: jdbc:mysql://localhost:3306/TESTDB?useSSL=false 
+  driverClassName: com.mysql.jdbc.Driver
+  username: cwkim
+  password: 1111
+  
+  
+#logging:
+#  path: logs  
+  
+  
+
+#debug: true 

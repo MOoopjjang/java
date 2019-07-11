@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="com.mooop.def.dao.MYSQL"> 
+	<resultMap type="hashmap" id="auth_info"> 
+		<result property="username" column="userid" /> 
+		<result property="password" column="password" /> 
+		<result property="role" column="role" /> 
+	</resultMap> 
+
+
+	<select id="getAllUserAuthInfo" resultMap="auth_info"> 
+		SELECT userid,password,role FROM BOOK_AUTH
+	 </select> 
+
+
+</mapper>
