@@ -3,6 +3,8 @@ package com.mooop.def.controller;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -34,7 +36,7 @@ public class MemberController {
 
 
 	@GetMapping("/")
-	public ResponseEntity<ApiResponseData> allUserInfo() throws MemberException{
+	public ResponseEntity<ApiResponseData> allUserInfo(HttpServletRequest request) throws MemberException{
 		ApiResponseData<List<Map<String ,Object>>> resData = new ApiResponseData();
 		try {
 			List<Map<String ,Object>> result = memberService.getAllUserInfo();
@@ -51,7 +53,8 @@ public class MemberController {
 	
 	
 	@PostMapping("/user")
-	public ResponseEntity<ApiResponseData> getUserInfo(@RequestBody RequestUserParam param) throws MemberException{
+	public ResponseEntity<ApiResponseData> getUserInfo(HttpServletRequest request ,
+			@RequestBody RequestUserParam param) throws MemberException{
 		ApiResponseData<Map<String ,Object>> resData = new ApiResponseData<>();
 		
 		try {
@@ -61,12 +64,15 @@ public class MemberController {
 			e.printStackTrace();
 			throw new MemberException(MemberError.MEMBER_ERROR_2 , e.toString());
 		}
+		
+		
 		return new ResponseEntity<>(resData , HttpStatus.OK);
 	}
 	
 	
 	@DeleteMapping("/user")
-	public ResponseEntity<ApiResponseData> delUserInfo(@RequestBody RequestUserParam param) throws MemberException{
+	public ResponseEntity<ApiResponseData> delUserInfo(HttpServletRequest request,
+			@RequestBody RequestUserParam param) throws MemberException{
 		ApiResponseData<Map<String ,Object>> resData = new ApiResponseData<>();
 		try {
 			memberService.deleteUserInfo(param.getName(), param.getAge());

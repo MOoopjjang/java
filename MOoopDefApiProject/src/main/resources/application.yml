@@ -14,3 +14,15 @@ mysql:
   
 
 #debug: true 
+
+
+
+lateif:
+  timeout: 2
+  
+api:
+  key: X-API-KEY
+  value: test1234  
+  
+  
+  

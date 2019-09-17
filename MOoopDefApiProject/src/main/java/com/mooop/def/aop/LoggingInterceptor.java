@@ -1,4 +1,4 @@
-package com.mooop.def.interceptor;
+package com.mooop.def.aop;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

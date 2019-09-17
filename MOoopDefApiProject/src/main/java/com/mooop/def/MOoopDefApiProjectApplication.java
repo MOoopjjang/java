@@ -2,6 +2,7 @@ package com.mooop.def;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 
 
@@ -13,7 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *                  +
  *     ExceptionHandler  ( Custom Exception )
  *                  +
- *     HandlerInterceptor ( logging )
+ *     HandlerInterceptor ( logging ) & AOP ( log , filter )
  *                  +
  *            CACHE ( EHCache )
  *                  +
@@ -29,6 +30,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 
 
+@EnableAspectJAutoProxy
 @SpringBootApplication
 public class MOoopDefApiProjectApplication {
 

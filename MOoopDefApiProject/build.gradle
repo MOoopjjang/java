@@ -39,5 +39,10 @@ dependencies {
 	compile group: 'net.sf.ehcache', name: 'ehcache', version: '2.10.0'
 	
 	
+	/* AOP */
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-aop', version: '2.1.4.RELEASE'
+	
+	
+	
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

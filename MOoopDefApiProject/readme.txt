@@ -5,7 +5,7 @@
 ##################################################################
 1. DB 연동 ( MySQL + Common DBCP2.x + MyBatis + Transaction )
 2. Controller ExceptionHandler 정의 
-3. Handler Interceptor 적용
+3. Handler Interceptor + AOP ( log , filter ) 적용
 4. Spring Cache적용 ( EHCache )
 5. Thread Pool 적용으로 Working Thread 관리
 6. log back 

@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +35,7 @@ public class DataController {
 	
 	
 	@GetMapping("/")
-	public ResponseEntity<ApiResponseData> getAllUserData() throws DataException{
+	public ResponseEntity<ApiResponseData> getAllUserData(HttpServletRequest request) throws DataException{
 		ApiResponseData<List<Map<String , Object>>> res = new ApiResponseData<>();
 		try {
 			CompletableFuture<List<Map<String , Object>>> f = dataService.getAllUserData();
@@ -52,7 +54,8 @@ public class DataController {
 	
 	
 	@PutMapping("/user")
-	public ResponseEntity<ApiResponseData> updateData(@RequestBody RequestInsertUserDataParam data) throws DataException{
+	public ResponseEntity<ApiResponseData> updateData(HttpServletRequest request 
+			, @RequestBody RequestInsertUserDataParam data) throws DataException{
 		ApiResponseData<Map> res = new ApiResponseData<>();
 		try {
 			res.setResult("OK");
