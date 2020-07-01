@@ -1,0 +1,19 @@
+
+
+
+spring:
+  thymeleaf:
+    prefix: classpath:templates/
+    check-template-location: true
+    suffix: .html
+    mode: HTML
+    cache: false
+    template-resolver-order: 0
+  mvc:
+    static-path-pattern: /resources/**  
+        
+        
+sec:
+  username: cwkim
+  password: 1111
+  role: USER
