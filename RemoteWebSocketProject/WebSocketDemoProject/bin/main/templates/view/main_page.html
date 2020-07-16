@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<link th:href="@{/resources/asset/bootstrap-4.3.1-dist/css/bootstrap.min.css}" rel="stylesheet">
+		<title> Main Page</title>
+		
+		<style>
+			.admin-body-type{
+			   display : block;
+			   width: 800px;
+			   height: 600px;
+			   
+			   border: 1px solid blue;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+		<h1>Main Page</h1>
+		<div >
+		
+			<button type="button" onclick="func_remote()">remote test</button>
+			
+			<div>
+				<div id="admin_body" class="admin-body-type">
+				</div>
+				
+			</div>
+		</div>
+		
+		<script th:src="@{/resources/asset/jquery-3.4.1.min.js}"></script>
+		<script th:src="@{/resources/asset/bootstrap-4.3.1-dist/js/bootstrap.min.js}"></script>
+		<script th:src="@{/webjars/sockjs-client/sockjs.min.js}"></script>
+		<script th:src="@{/webjars/stomp-websocket/stomp.min.js}"></script>
+		<script type="text/javascript">
+		    /* main_page에서 원격에 존재하는 .html을 load한다. 
+		     *	- count : 최초 1회만 websocket을 연결하도록 제한하기 위한 변수값 
+		     */
+			var count = 0;
+			function func_remote(){
+				
+				/* remote에 존재하는 html파일을 load 한다 */
+				$("#admin_body").empty();
+				$("#admin_body").load("http://localhost:9080/wsc/remote_body?count="+count , function(){
+					count++;
+					alert('count : '+count);
+				})
+			}
+			
+		
+			(function init(){
+				
+			}())
+		</script>
+	</body>
+</html>

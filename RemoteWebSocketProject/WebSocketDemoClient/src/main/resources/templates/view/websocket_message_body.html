@@ -1,0 +1,52 @@
+
+	    <div>
+		    <h1>WebSocket Remote Message Body</h1>
+			<div id="contents">
+			</div>
+			
+			<button type="button" class="btn btn-primary">ttt</button>
+	    </div>
+		
+		
+		<script th:src="@{/resources/asset/jquery-3.4.1.min.js}"></script>
+		<script th:src="@{/resources/asset/bootstrap-4.3.1-dist/js/bootstrap.min.js}"></script>
+		<script th:src="@{/webjars/sockjs-client/sockjs.min.js}"></script>
+		<script th:src="@{/webjars/stomp-websocket/stomp.min.js}"></script>
+		<script th:inline="javascript">
+		/*<![CDATA[*/
+		 	var con_count = [[${count}]];
+			console.log('con_count : '+con_count);
+			var $contents = document.getElementById('contents');
+			var testStompClient = null;
+			
+			
+			function onConnect(){
+				testStompClient.subscribe('/topic/test' , function(message){
+					let pE = document.createElement('p');
+					pE.innerHTML = message.body;
+					$contents.appendChild(pE);
+				});
+			}
+			
+			function onError(e){
+				console.log('STOMP ERROR'+e);
+			}
+			
+			
+			function initTestStompClient(){
+				var sock = new WebSocket('ws://127.0.0.1:15674/ws');
+				testStompClient = Stomp.over(sock);
+				testStompClient.connect("test" , "test123" ,onConnect , onError  );
+			}
+			
+			$(document).ready(function(){
+				console.log('>>>>con_count :'+con_count);
+				if( typeof con_count === undefined || con_count === null || con_count === '0'){
+					initTestStompClient();
+				}
+				
+			})
+		
+		/*]]>*/	
+		</script>
+	

@@ -1,0 +1,21 @@
+
+# rabbitmp + stomp image 다운로드 및 실행
+docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 -p 61613:61613 -p 15674:15674 --restart=unless-stopped -e RABBITMQ_DEFAULT_USER=test -e RABBITMQ_DEFAULT_PASS=test rabbitmq:management
+
+
+# rabbitmq shell접속
+docker exec -it rabbitmq /bin/bash
+
+
+# plugin list 에서 rabbitmq_stomp , rabbitmq_web_stomp 확인
+rabbitmq-plugins list
+
+# 기능 활성화
+rabbitmq-plugins enable rabbitmq_stomp
+rabbitmq-plugins enable rabbitmq_web_stomp
+
+# rabbitmq STOMP 포트 외부접근 허용
+vi /etc/rabbitmq/rabbitmq.conf
+  stomp.listeners.tcp.1 = 61613 
+
+  

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title> WebSocket Test</title>
+	</head>
+	
+	<body>
+		<h1>Socket TEst</h1>
+		<div id="contents">
+		
+		
+		
+		
+		</div>
+		
+		
+		<script th:src="@{/webjars/sockjs-client/sockjs.min.js}"></script>
+		<script th:src="@{/webjars/stomp-websocket/stomp.min.js}"></script>
+		<script type="text/javascript">
+		
+			var $contents = document.getElementById('contents');
+			var stompClient = null;
+			
+			function initStompClient(){
+				let sock = new SockJS('/ws');
+				stompClient = Stomp.over(sock);
+				
+				stompClient.connect({} , function(frame){
+					stompClient.subscribe('/subscribe/test' , function(message){
+						
+						let pE = document.createElement('p');
+						pE.innerHTML = message.body;
+						$contents.appendChild(pE);
+					});
+				});
+			}
+		
+			(function init(){
+				initStompClient();
+			}())
+		</script>
+	</body>
+</html>

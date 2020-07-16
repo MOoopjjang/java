@@ -1,0 +1,17 @@
+
+debug: false
+
+
+spring:
+  thymeleaf:
+    prefix: classpath:templates/view/
+    suffix: .html
+    check-template-location: true
+    mode: HTML
+    cache: false
+    template-resolver-order: 0
+  mvc:
+    static-path-pattern: /resources/**
+
+
+
