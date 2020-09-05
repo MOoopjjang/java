@@ -18,3 +18,6 @@ Server[ SpringBoot | P:8080 | Publisher] --> (31313)RabbitMQ(15674) --> WebClien
 
 # Template
 java8 + javaFX
+
+# JavaApiTest
+Java example | java8 | etc programming
