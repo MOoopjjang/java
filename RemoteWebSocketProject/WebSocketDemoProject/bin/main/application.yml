@@ -10,8 +10,8 @@ spring:
     mode: HTML
     cache: false
     template-resolver-order: 0
-  mvc:
-    static-path-pattern: /resources/**
+#  mvc:
+#    static-path-pattern: /resources/**
 
 
 

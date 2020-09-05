@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #20120F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="350.0" layoutY="34.0" prefHeight="334.0" prefWidth="292.0" style="-fx-background-color: #9C2B27;">
+         <children>
+            <JFXTextField fx:id="email" layoutX="32.0" layoutY="75.0" prefHeight="30.0" prefWidth="228.0" promptText="이메일" unFocusColor="WHITE">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTextField>
+            <Label alignment="CENTER" layoutX="74.0" layoutY="30.0" prefHeight="30.0" prefWidth="145.0" text="Sign In" textFill="#f8f5f5">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="pwd" layoutX="32.0" layoutY="146.0" prefHeight="27.0" prefWidth="228.0" promptText="패스워드" unFocusColor="WHITE">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="signin" layoutX="32.0" layoutY="218.0" prefHeight="37.0" prefWidth="228.0" style="-fx-background-color: #FF7F50#FF7F50;" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </JFXButton>
+            <Hyperlink alignment="CENTER" layoutX="35.0" layoutY="273.0" prefHeight="27.0" prefWidth="228.0" text="Forgot Password" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="44.0" layoutY="60.0" prefHeight="280.0" prefWidth="292.0">
+         <children>
+            <Label layoutX="29.0" layoutY="76.0" prefHeight="37.0" prefWidth="236.0" text="Welcome to MOoop" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="113.0" prefHeight="21.0" prefWidth="236.0" text="Anything you need to know to about java swing" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="129.0" prefHeight="21.0" prefWidth="236.0" text="and JavaFx  Email now" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="28.0" layoutY="178.0" prefHeight="30.0" prefWidth="134.0" style="-fx-background-color: #FF7F50#FF7F50;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

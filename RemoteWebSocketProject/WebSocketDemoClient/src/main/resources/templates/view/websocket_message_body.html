@@ -22,9 +22,25 @@
 			
 			function onConnect(){
 				testStompClient.subscribe('/topic/test' , function(message){
+					let divE = document.createElement('div');
 					let pE = document.createElement('p');
 					pE.innerHTML = message.body;
-					$contents.appendChild(pE);
+					
+					let imgE = document.createElement('img');
+					
+					/* 
+					imgE.src = "@{/img/img_grib_4seam_fastball.png}";
+					 */
+					
+					
+					imgE.src = "/img/img_grib_4seam_fastball.png";
+					imgE.width = 100;
+					imgE.height = 100;
+					
+					divE.appendChild(pE);
+					divE.appendChild(imgE)
+					
+					$contents.appendChild(divE);
 				});
 			}
 			
