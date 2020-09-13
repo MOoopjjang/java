@@ -2,26 +2,25 @@ package com.mooop.m.demo.fmg;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 import io.reactivex.Flowable;
 import io.reactivex.flowables.ConnectableFlowable;
+import io.reactivex.schedulers.Schedulers;
 
 public class FmgEventManager {
 	
 	
-	private Map<FMG_ACTION_EVENT , List<UiSubscriber>> eMap = null;
+	private Map<FMG_ACTION_EVENT , List<ActionSubscriber>> eMap = null;
 	
 	
 	public FmgEventManager() {
 		eMap = Arrays.asList(FMG_ACTION_EVENT.values())
 				.stream()
-				.collect(Collectors.toMap(e->e , e->new ArrayList<UiSubscriber>()));
+				.collect(Collectors.toMap(e->e , e->new ArrayList<ActionSubscriber>()));
 		System.out.println("::"+eMap.size()+"::");
 	}
 	
@@ -40,7 +39,7 @@ public class FmgEventManager {
 	 * @param e
 	 * @param className
 	 */
-	public void registry(final UiSubscriber className , final FMG_ACTION_EVENT... e ) {
+	public void registry(final ActionSubscriber className , final FMG_ACTION_EVENT... e ) {
 		Arrays.asList(e).stream().map(es->{
 			eMap.get(es).add(className);
 			return "success";
@@ -68,12 +67,12 @@ public class FmgEventManager {
 	 * @param e
 	 * @param className
 	 */
-	public void unregistry(final FMG_ACTION_EVENT e , final UiSubscriber className ) {
+	public void unregistry(final FMG_ACTION_EVENT e , final ActionSubscriber className ) {
 		if(eMap.containsKey(e)) {
-			ArrayList<UiSubscriber> l = (ArrayList<UiSubscriber>) eMap.get(e);
-			Iterator<UiSubscriber> iterator = l.iterator();
+			ArrayList<ActionSubscriber> l = (ArrayList<ActionSubscriber>) eMap.get(e);
+			Iterator<ActionSubscriber> iterator = l.iterator();
 			while(iterator.hasNext()) {
-				UiSubscriber us = iterator.next();
+				ActionSubscriber us = iterator.next();
 				if(us.equals(className)) {
 					iterator.remove();
 				}
@@ -87,15 +86,18 @@ public class FmgEventManager {
 	 * @param e
 	 * @param data
 	 */
-	public void notify(final FMG_ACTION_EVENT e , final Object data ) {
+	public <T> void notify(final FMG_ACTION_EVENT e , final MMessage<T> data ) {
 		
 		if(eMap.containsKey(e)) {
-			ConnectableFlowable<Object> flowable = (ConnectableFlowable<Object>) Flowable.just(data);
-			for(UiSubscriber s : eMap.get(e)) {
-				flowable.subscribe(s);
-			}
+			ConnectableFlowable<MMessage<T>> flowable = Flowable.just(data).publish();
+			eMap.get(e).stream()
+					.peek(ee->System.out.println(ee.getClass().getSimpleName()))
+					.forEach(ee->flowable.subscribe(ee));
+			flowable.connect(s->{
+				System.out.println("Notify Starting....");
+			});
 			
-			flowable.connect();
+			
 		}
 		
 	}

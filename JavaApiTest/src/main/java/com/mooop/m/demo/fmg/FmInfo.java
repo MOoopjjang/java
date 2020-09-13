@@ -33,7 +33,7 @@ public class FmInfo {
 	 * @return
 	 */
 	public List<String> getSearchText(){
-		return Arrays.asList(this.path.split("\\|"));
+		return Arrays.asList(this.searchText.split("\\|"));
 	}
 	
 	

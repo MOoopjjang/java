@@ -3,17 +3,17 @@ package com.mooop.m.demo.fmg;
 import org.reactivestreams.Subscriber;
 import org.reactivestreams.Subscription;
 
-public class UiSubscriber<T> implements Subscriber<T>{
+public class ActionSubscriber<MMessage> implements Subscriber<MMessage>{
 
 	@Override
 	public void onSubscribe(Subscription s) {
-		// TODO Auto-generated method stub
+		s.request(Long.MAX_VALUE);
 		
 	}
 
 	@Override
-	public void onNext(T t) {
-		// TODO Auto-generated method stub
+	public void onNext(MMessage t) {
+		System.out.println("ActionSubscriber -- > ");
 		
 	}
 
@@ -28,5 +28,6 @@ public class UiSubscriber<T> implements Subscriber<T>{
 		// TODO Auto-generated method stub
 		
 	}
+
 
 }
