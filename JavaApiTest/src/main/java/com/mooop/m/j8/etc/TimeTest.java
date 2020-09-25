@@ -37,6 +37,7 @@ public class TimeTest {
 		Duration diff = Duration.between(here, paris);
 		System.out.println(diff.toHours());
 		
+		
 	}
 	
 	//ZoneId에서 지원하는 지역들을 출력한다.

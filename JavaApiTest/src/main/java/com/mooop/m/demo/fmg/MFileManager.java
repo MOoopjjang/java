@@ -21,7 +21,11 @@ public class MFileManager {
 	}
 	
 	
-	
+	/**
+	 * 
+	 * @param info
+	 * @return
+	 */
 	public MFileManager setInfo(FmInfo info) {
 		this.info = info;
 		return this;
@@ -52,7 +56,7 @@ public class MFileManager {
 	 * 
 	 */
 	private static class  LazyHolder{
-		public static final MFileManager INSTANCE = new MFileManager();
+		private static final MFileManager INSTANCE = new MFileManager();
 	}
 
 
