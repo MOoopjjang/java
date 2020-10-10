@@ -1,4 +1,4 @@
-package com.mooop.m.j8.syntax;
+package com.mooop.m.j8.adv;
 
 import java.util.function.Consumer;
 

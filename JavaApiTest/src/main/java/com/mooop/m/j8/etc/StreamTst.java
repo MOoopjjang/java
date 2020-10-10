@@ -7,7 +7,27 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class StreamTst {
-	
+
+
+	private static void tst6(){
+
+		/* parallel 에서 사용할수 있는 thread 설정 */
+		System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism" , "6");
+		Long sumValue = Stream.iterate(1L , i->i+1).limit(10).parallel().reduce(0L , Long::sum);
+		System.out.println("result :"+sumValue);
+
+		/* sequential -> parallel*/
+
+		sumValue =Stream.iterate(1L , i->i+1)
+				.limit(100)
+				.filter(n->n%2 == 0)
+				.sequential()
+				.map(n->n*2)
+				.parallel()
+				.reduce(0L , (x,y)->x+y);
+		System.out.println("result 2:"+sumValue);
+
+	}
 	
 	/**
 	 * String data가 stream example
@@ -84,10 +104,10 @@ public class StreamTst {
 	public static void main(String[] args) {
 		try {
 //			tst2();
-			
 //			tst4();
-			
-			tst5();
+//			tst5();
+
+			tst6();
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
