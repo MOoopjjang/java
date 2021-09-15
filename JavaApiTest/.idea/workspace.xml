@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2bbc0576-1701-4674-be61-e61fa732830a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/bin/main/com/mooop/m/demo/fmg/MFileManager$LazyHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/com/mooop/m/demo/fmg/MFileManager$LazyHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main/com/mooop/m/demo/fmg/MFileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/com/mooop/m/demo/fmg/MFileManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main/com/mooop/m/j8/etc/StreamTst.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/com/mooop/m/j8/etc/StreamTst.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/main/com/mooop/m/j8/etc/TimeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/com/mooop/m/j8/etc/TimeTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+    <option name="SCHEME" value="Project" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1iOL3OWcaOw5t1EdZ9pJOkw3iST" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3632184" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mooop.m.demo.pool.t" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ReflectMain">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mooop.m.designpattern.proxy2.Main" />
+      <module name="JavaApiTest.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mooop.m.designpattern.proxy2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReflectMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mooop.m.j8.reflect.ReflectMain" />
+      <module name="JavaApiTest.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mooop.m.j8.reflect.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamTst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mooop.m.j8.etc.StreamTst" />
+      <module name="JavaApiTest.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mooop.m.j8.etc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThdMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mooop.m.j8.thd.ThdMain" />
+      <module name="JavaApiTest.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mooop.m.j8.thd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThdMain2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mooop.m.j8.thd.ThdMain2" />
+      <module name="JavaApiTest.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mooop.m.j8.thd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ReflectMain" />
+        <item itemvalue="Application.ThdMain2" />
+        <item itemvalue="Application.ThdMain" />
+        <item itemvalue="Application.StreamTst" />
+        <item itemvalue="Application.Main (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2bbc0576-1701-4674-be61-e61fa732830a" name="Default Changelist" comment="" />
+      <created>1601773495805</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601773495805</updated>
+      <workItem from="1601773497289" duration="238000" />
+      <workItem from="1601861468564" duration="3213000" />
+      <workItem from="1601950370116" duration="1697000" />
+      <workItem from="1602127978673" duration="3113000" />
+      <workItem from="1602142619275" duration="6669000" />
+      <workItem from="1602205853293" duration="19964000" />
+      <workItem from="1602309440394" duration="12839000" />
+      <workItem from="1610940987350" duration="195000" />
+      <workItem from="1610941223846" duration="1372000" />
+      <workItem from="1611032583544" duration="271000" />
+      <workItem from="1612582766785" duration="998000" />
+      <workItem from="1614648591733" duration="1000" />
+      <workItem from="1615514134579" duration="104000" />
+      <workItem from="1615867977049" duration="149000" />
+      <workItem from="1617599465219" duration="6722000" />
+      <workItem from="1617612024538" duration="932000" />
+      <workItem from="1618735497314" duration="1647000" />
+      <workItem from="1621935428642" duration="3976000" />
+      <workItem from="1623370950263" duration="1118000" />
+      <workItem from="1624771775235" duration="1912000" />
+      <workItem from="1624953236733" duration="287000" />
+      <workItem from="1625294581718" duration="432000" />
+      <workItem from="1625314469307" duration="4432000" />
+      <workItem from="1625375647961" duration="33000" />
+      <workItem from="1626138647533" duration="2637000" />
+      <workItem from="1626141459855" duration="243000" />
+      <workItem from="1626141970163" duration="414000" />
+      <workItem from="1626164051108" duration="128000" />
+      <workItem from="1626178134770" duration="506000" />
+      <workItem from="1626240797761" duration="860000" />
+      <workItem from="1626270552726" duration="10000" />
+      <workItem from="1626274378599" duration="277000" />
+      <workItem from="1626502899057" duration="3124000" />
+      <workItem from="1626564326305" duration="3572000" />
+      <workItem from="1626657430364" duration="3388000" />
+      <workItem from="1626870297164" duration="2131000" />
+      <workItem from="1626876292735" duration="1107000" />
+      <workItem from="1626913757179" duration="3557000" />
+      <workItem from="1627000273865" duration="142000" />
+      <workItem from="1627102620646" duration="265000" />
+      <workItem from="1627478527163" duration="616000" />
+      <workItem from="1630070530781" duration="1162000" />
+      <workItem from="1631667349472" duration="663000" />
+      <workItem from="1631712060644" duration="239000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
