@@ -22,5 +22,16 @@ public class Screening {
         return this.sequence == sequence;
     }
 
-//    public
+    public Money getMovieFee(){
+        return movie.getFee();
+    }
+
+
+    public Reservation reservation(Customer customer , int audienceCount){
+        return new Reservation(customer , this , calculateFee(audienceCount) , audienceCount);
+    }
+
+    private Money calculateFee(int audienceCount){
+        return movie.calculateMovieFee(this).times(audienceCount);
+    }
 }
