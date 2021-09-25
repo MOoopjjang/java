@@ -1,6 +1,6 @@
-package com.mooop.m.demo.utms;
+package com.mooop.m.demo.auth;
 
-public class UtmsMain {
+public class AuthMain {
 
     public static void main(String[] args) {
 

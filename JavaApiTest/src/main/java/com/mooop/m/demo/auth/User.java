@@ -1,8 +1,7 @@
-package com.mooop.m.demo.utms;
+package com.mooop.m.demo.auth;
 
 
 import lombok.Getter;
-import lombok.Setter;
 
 @Getter
 public class User {
