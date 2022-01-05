@@ -1,6 +1,6 @@
-package com.mooop.m.designpattern.fruit.v1;
+package com.mooop.m.designpattern.fruit.v0;
 
-public class CustomerStatusV1 {
+public class CustomerStatusV0 {
     private boolean isFirst = false;
     private boolean isLast = false;
 

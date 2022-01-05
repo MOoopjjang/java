@@ -1,27 +1,20 @@
-package com.mooop.m.designpattern.fruit.v0;
+package com.mooop.m.designpattern.fruit.v1;
 
+import com.mooop.m.designpattern.fruit.v1.discount.IDiscountConditionV1;
+import com.mooop.m.designpattern.fruit.v1.policy.DiscountPolicyV1;
 import com.mooop.m.designpattern.fruit.vo.Fruit;
 
-public class DiscountV0 {
+public class DiscountV1 {
 
+    private DiscountPolicyV1 discountPolicy;
+    public DiscountV1(DiscountPolicyV1 discountPolicy){
+        this.discountPolicy = discountPolicy;
+    }
 
-    public int getDC(Fruit fruit , CustomerV0 customerV0){
-        int dc = 0;
-        if(customerV0.isFirstAndLast()){
-            dc += 30;
-        }else{
-            if(customerV0.isFirst()){
-                 dc += 10;
-            }else if(customerV0.isLast()){
-                 dc += 20;
-            }
-        }
-
-        if(fruit.isNotFresh()){
-            dc += 20;
-        }
-
-
-        return dc;
+    public int getDC(Fruit fruit, CustomerV1 customer){
+        return discountPolicy.createDiscountList(fruit , customer)
+            .stream()
+            .map(IDiscountConditionV1::getDC)
+            .reduce(0 , Integer::sum);
     }
 }

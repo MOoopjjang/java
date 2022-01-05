@@ -23,10 +23,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bbc0576-1701-4674-be61-e61fa732830a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/bin/main/com/mooop/m/demo/fmg/MFileManager$LazyHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/com/mooop/m/demo/fmg/MFileManager$LazyHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/main/com/mooop/m/demo/fmg/MFileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/com/mooop/m/demo/fmg/MFileManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/main/com/mooop/m/j8/etc/StreamTst.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/com/mooop/m/j8/etc/StreamTst.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/main/com/mooop/m/j8/etc/TimeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/com/mooop/m/j8/etc/TimeTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v1/CustomerStatusV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v1/CustomerV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v1/DiscountV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v1/FruitShopV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v1/FruitTestV1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/movie2/DiscountCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/movie2/DiscountCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/movie2/MoiveType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/movie2/MovieType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/movie2/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/movie2/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/j8/syntax/EtcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/j8/syntax/EtcTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +49,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Enum" />
+        <option value="Kotlin Class" />
+        <option value="AnnotationType" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -62,6 +72,7 @@
   <component name="ProjectId" id="1iOL3OWcaOw5t1EdZ9pJOkw3iST" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -70,9 +81,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v1" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3632184" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
@@ -82,17 +93,20 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v1" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.mooop.m.demo.pool.t" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ReflectMain">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mooop.m.designpattern.proxy2.Main" />
+  <component name="RunManager" selected="Application.FruitTestV1">
+    <configuration name="EtcTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mooop.m.j8.syntax.EtcTest" />
       <module name="JavaApiTest.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mooop.m.designpattern.proxy2.*" />
+          <option name="PATTERN" value="com.mooop.m.j8.syntax.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +114,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReflectMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mooop.m.j8.reflect.ReflectMain" />
+    <configuration name="FruitTestV0" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mooop.m.designpattern.fruit.v0.FruitTestV0" />
       <module name="JavaApiTest.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mooop.m.j8.reflect.*" />
+          <option name="PATTERN" value="com.mooop.m.designpattern.fruit.v0.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,12 +127,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamTst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mooop.m.j8.etc.StreamTst" />
+    <configuration name="FruitTestV1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mooop.m.designpattern.fruit.v1.FruitTestV1" />
       <module name="JavaApiTest.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mooop.m.j8.etc.*" />
+          <option name="PATTERN" value="com.mooop.m.designpattern.fruit.v1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,12 +140,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThdMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mooop.m.j8.thd.ThdMain" />
+    <configuration name="MCleaner" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mooop.m.demo.cleaner.MCleaner" />
+      <module name="JavaApiTest.main" />
+      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/../../../Personal/java/bgeps/src class" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mooop.m.demo.cleaner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mooop.m.demo.factorybean.Main" />
       <module name="JavaApiTest.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mooop.m.j8.thd.*" />
+          <option name="PATTERN" value="com.mooop.m.demo.factorybean.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,26 +177,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThdMain2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mooop.m.j8.thd.ThdMain2" />
+    <configuration name="MovieMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mooop.m.designpattern.movie.MovieMain" />
       <module name="JavaApiTest.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mooop.m.j8.thd.*" />
+          <option name="PATTERN" value="com.mooop.m.designpattern.movie.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ReflectMain" />
-        <item itemvalue="Application.ThdMain2" />
-        <item itemvalue="Application.ThdMain" />
-        <item itemvalue="Application.StreamTst" />
-        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.FruitTestV1" />
+        <item itemvalue="Application.FruitTestV0" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.EtcTest" />
+        <item itemvalue="Application.MovieMain" />
       </list>
     </recent_temporary>
   </component>
@@ -214,6 +265,43 @@
       <workItem from="1630070530781" duration="1162000" />
       <workItem from="1631667349472" duration="663000" />
       <workItem from="1631712060644" duration="239000" />
+      <workItem from="1631714968526" duration="1264000" />
+      <workItem from="1631786503750" duration="3387000" />
+      <workItem from="1632442965025" duration="492000" />
+      <workItem from="1632552701035" duration="6023000" />
+      <workItem from="1632880257956" duration="733000" />
+      <workItem from="1632903392296" duration="119000" />
+      <workItem from="1632970994568" duration="1368000" />
+      <workItem from="1632987715785" duration="278000" />
+      <workItem from="1633327352778" duration="39000" />
+      <workItem from="1634198748538" duration="8000" />
+      <workItem from="1634548056793" duration="2354000" />
+      <workItem from="1634605557070" duration="245000" />
+      <workItem from="1634715676549" duration="1537000" />
+      <workItem from="1635232547833" duration="2300000" />
+      <workItem from="1635297790671" duration="248000" />
+      <workItem from="1635325202441" duration="554000" />
+      <workItem from="1635392596171" duration="333000" />
+      <workItem from="1635394297908" duration="4601000" />
+      <workItem from="1635409484676" duration="275000" />
+      <workItem from="1635901738128" duration="837000" />
+      <workItem from="1638756271805" duration="1877000" />
+      <workItem from="1638932302170" duration="1134000" />
+      <workItem from="1638934739957" duration="20000" />
+      <workItem from="1638934772483" duration="6694000" />
+      <workItem from="1638944490128" duration="3446000" />
+      <workItem from="1638955263950" duration="6719000" />
+      <workItem from="1639013656715" duration="2080000" />
+      <workItem from="1639372674317" duration="212000" />
+      <workItem from="1639900404766" duration="262000" />
+      <workItem from="1639965442268" duration="495000" />
+      <workItem from="1639975590247" duration="441000" />
+      <workItem from="1640085045178" duration="2900000" />
+      <workItem from="1640088889740" duration="2777000" />
+      <workItem from="1640099187383" duration="19000" />
+      <workItem from="1640137051732" duration="54000" />
+      <workItem from="1641271114570" duration="5140000" />
+      <workItem from="1641343937863" duration="13984000" />
     </task>
     <servers />
   </component>

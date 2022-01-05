@@ -1,12 +1,12 @@
-package com.mooop.m.designpattern.fruit.v1;
+package com.mooop.m.designpattern.fruit.v0;
 
 import com.mooop.m.designpattern.fruit.vo.Fruit;
 
-public class FruitTestV1 {
+public class FruitTestV0 {
 
     public static void main(String[] args) {
 
-        FruitShopV1 shop = new FruitShopV1();
+        FruitShopV0 shop = new FruitShopV0();
 
         Fruit fruit1 = new Fruit("apple" , 3200 , Fruit.FRESH_STATUS.FRESH);
         shop.buy(fruit1);

@@ -7,14 +7,16 @@
  */
 
 buildscript {
-	repositories {
+    ext.kotlin_version = '1.6.0-RC2'
+    repositories {
 		mavenCentral()
 		maven {
 			url "https://plugins.gradle.org/m2/"
 		}
 	}
 	dependencies {
-		classpath("io.franzbecker:gradle-lombok:1.14") //추가
+		classpath("io.franzbecker:gradle-lombok:1.14")
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version" //추가
 	}
 }
 
@@ -25,7 +27,8 @@ plugins {
     id 'java-library'
 }
 
-apply plugin: 'io.franzbecker.gradle-lombok' //추가
+apply plugin: 'io.franzbecker.gradle-lombok'
+//apply plugin: 'kotlin' //추가
 
 repositories {
     // Use jcenter for resolving your dependencies.
@@ -73,4 +76,15 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+//    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 }
+//compileKotlin {
+//    kotlinOptions {
+//        jvmTarget = "1.8"
+//    }
+//}
+//compileTestKotlin {
+//    kotlinOptions {
+//        jvmTarget = "1.8"
+//    }
+//}

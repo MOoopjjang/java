@@ -1,7 +1,10 @@
 package com.mooop.m.designpattern.movie2;
 
 
+import com.mooop.m.designpattern.movie.Money;
+
 import java.time.Duration;
+import java.time.LocalDateTime;
 import java.util.Collections;
 import java.util.List;
 
@@ -15,6 +18,50 @@ public class Movie {
     private Money discountAmount;
     private double discountPercent;
 
+    public MovieType getMovieType() {
+        return movieType;
+    }
+
+    public boolean isDiscountable(LocalDateTime whenScreened , int sequence){
+        for(DiscountCondition discountCondition:discountConditions){
+            if(discountCondition.getType() == DiscountConditionType.PERIOD){
+                if(discountCondition.isDiscountable(whenScreened.getDayOfWeek() , whenScreened.toLocalTime())){
+                    return true;
+                }
+            }else{
+                if(discountCondition.isDiscountable(sequence)){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    public Money calculateAmountDiscountedFee(){
+        if(this.movieType != MovieType.AMOUNT_DISCOUNT){
+            throw new IllegalArgumentException();
+        }
+        return fee.minus(this.discountAmount);
+    }
+
+
+    public Money calculatePercentDiscountedFee(){
+        if(this.movieType != MovieType.PERCENT_DISCOUNT){
+            throw new IllegalArgumentException();
+        }
+        return fee.minus(fee.times(discountPercent));
+    }
+
+    public Money calculateNoneDiscountedFee(){
+        if(this.movieType != MovieType.NONE_DISCOUNT){
+            throw new IllegalArgumentException();
+        }
+        return fee;
+    }
+
+
+
+    /*
     public String getTitle() {
         return title;
     }
@@ -47,10 +94,6 @@ public class Movie {
         this.discountConditions = discountConditions;
     }
 
-    public MovieType getMovieType() {
-        return movieType;
-    }
-
     public void setMovieType(MovieType movieType) {
         this.movieType = movieType;
     }
@@ -70,4 +113,6 @@ public class Movie {
     public void setDiscountPercent(double discountPercent) {
         this.discountPercent = discountPercent;
     }
+
+     */
 }
