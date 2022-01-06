@@ -6,14 +6,14 @@ import com.mooop.m.designpattern.fruit.vo.SeqDev;
 /**
  *  과일판매숍
  */
-public class FruitShopV0 {
+public class FruitStoreV0 {
     private FruitSellerV0 seller;
     private DiscountV0 discount;
     private SeqDev seqDev;
 //    private List<Fruit> fruits;
 
 
-    public FruitShopV0(){
+    public FruitStoreV0(){
         open();
     }
 

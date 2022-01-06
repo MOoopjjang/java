@@ -34,10 +34,7 @@ public class CustomerV0 {
      * @return
      */
     public long calculateFruit(long reqAmount){
-        if(bag.getAmount() < reqAmount)return -1;
-        bag.minusAmount(reqAmount);
-        System.out.println("customer amount : "+bag.getAmount());
-        return reqAmount;
+        return bag.hold(reqAmount);
     }
 
     /**

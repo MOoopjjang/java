@@ -17,13 +17,20 @@ public class Bag {
         this(10000L);
     }
 
-    public long getAmount(){
-       return amount;
+
+    /**
+     * 소지한 돈에서 과일값을 지불한다.
+     *
+     * @param reqAmount
+     * @return
+     */
+    public long hold(long reqAmount){
+        if(amount < reqAmount)return -1;
+        minusAmount(reqAmount);
+        return reqAmount;
     }
 
-    public void minusAmount(long mAmount){
-        this.amount = this.amount - mAmount;
-    }
+
 
     public void addFruits(Fruit... fruits){
         this.fruits = Arrays.asList(fruits);
@@ -37,4 +44,7 @@ public class Bag {
         this.seq = seq;
     }
 
+    private void minusAmount(long mAmount){
+        this.amount = this.amount - mAmount;
+    }
 }

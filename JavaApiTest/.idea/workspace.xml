@@ -24,12 +24,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2bbc0576-1701-4674-be61-e61fa732830a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v0/CustomerStatusV0.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v0/CustomerV0.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v0/DiscountV0.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v0/FruitShopV0.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v0/FruitTestV0.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/movie2/ReservationAgency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/movie2/ReservationAgency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v0/CustomerV0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v0/CustomerV0.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v0/FruitShopV0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v0/FruitStoreV0.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v0/FrutiTestV0Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v0/FrutiTestV0Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/vo/Bag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/vo/Bag.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,15 +184,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -299,7 +295,8 @@
       <workItem from="1641271114570" duration="5140000" />
       <workItem from="1641343937863" duration="14347000" />
       <workItem from="1641431577422" duration="12738000" />
-      <workItem from="1641451438730" duration="751000" />
+      <workItem from="1641451438730" duration="825000" />
+      <workItem from="1641461194820" duration="1923000" />
     </task>
     <servers />
   </component>
