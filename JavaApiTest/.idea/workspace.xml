@@ -23,17 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2bbc0576-1701-4674-be61-e61fa732830a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v1/CustomerStatusV1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v1/CustomerV1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v1/DiscountV1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v1/FruitShopV1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v1/FruitTestV1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/movie2/DiscountCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/movie2/DiscountCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/movie2/MoiveType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/movie2/MovieType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/movie2/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/movie2/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/j8/syntax/EtcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/j8/syntax/EtcTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v0/CustomerStatusV0.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v0/CustomerV0.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v0/DiscountV0.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v0/FruitShopV0.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/fruit/v0/FruitTestV0.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/movie2/ReservationAgency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mooop/m/designpattern/movie2/ReservationAgency.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +96,7 @@
       <recent name="com.mooop.m.demo.pool.t" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FruitTestV1">
+  <component name="RunManager" selected="Application.FrutiTestV0Main">
     <configuration name="EtcTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mooop.m.j8.syntax.EtcTest" />
       <module name="JavaApiTest.main" />
@@ -133,6 +129,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.mooop.m.designpattern.fruit.v1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FrutiTestV0Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mooop.m.designpattern.fruit.v0.FrutiTestV0Main" />
+      <module name="JavaApiTest.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mooop.m.designpattern.fruit.v0.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,19 +186,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MovieMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mooop.m.designpattern.movie.MovieMain" />
-      <module name="JavaApiTest.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mooop.m.designpattern.movie.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -205,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FrutiTestV0Main" />
         <item itemvalue="Application.FruitTestV1" />
         <item itemvalue="Application.FruitTestV0" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.EtcTest" />
-        <item itemvalue="Application.MovieMain" />
       </list>
     </recent_temporary>
   </component>
@@ -301,7 +297,9 @@
       <workItem from="1640099187383" duration="19000" />
       <workItem from="1640137051732" duration="54000" />
       <workItem from="1641271114570" duration="5140000" />
-      <workItem from="1641343937863" duration="13984000" />
+      <workItem from="1641343937863" duration="14347000" />
+      <workItem from="1641431577422" duration="12738000" />
+      <workItem from="1641451438730" duration="751000" />
     </task>
     <servers />
   </component>

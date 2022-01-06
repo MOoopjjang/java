@@ -1,38 +1,61 @@
 package com.mooop.m.designpattern.fruit.v0;
 
+import com.mooop.m.designpattern.fruit.vo.Bag;
+import com.mooop.m.designpattern.fruit.vo.Fruit;
+import com.mooop.m.designpattern.fruit.vo.SeqDev;
+
+/**
+ * 고객
+ */
 public class CustomerV0 {
-    int seq;
-    CustomerStatusV0 status;
+
+    private Bag bag;
+
+
     public CustomerV0(){
-         this.seq = 0;
-        this.status = new CustomerStatusV0();
+        this.bag = new Bag();
     }
 
-    public CustomerV0(int seq){
-         this.seq = seq;
-        this.status = new CustomerStatusV0();
+
+
+    /**
+     * 과일을 담는다..
+     * @param fruits
+     */
+    public void receiveFruits(Fruit... fruits){
+        bag.addFruits(fruits);
     }
 
-    public CustomerV0(int seq , int maxCustomerCount){
-        this.seq = seq;
-        this.status = new CustomerStatusV0();
-        this.status.setFirst(this.seq == 1);
-        this.status.setLast(this.seq == maxCustomerCount);
+
+    /**
+     * 과일값을 계산한다.
+     *
+     * @param reqAmount
+     * @return
+     */
+    public long calculateFruit(long reqAmount){
+        if(bag.getAmount() < reqAmount)return -1;
+        bag.minusAmount(reqAmount);
+        System.out.println("customer amount : "+bag.getAmount());
+        return reqAmount;
     }
 
-    public int getSeq() {
-        return seq;
+    /**
+     * 입장순서를 발급받는다.
+     *
+     * @param seqDev
+     */
+    public void setSeq(SeqDev seqDev){
+        bag.setSeq(seqDev.createSeq());
     }
 
-    public boolean isFirst() {
-        return status.isFirst();
-    }
 
-    public boolean isLast(){
-        return status.isLast();
-    }
-
-    public boolean isFirstAndLast(){
-        return status.isLastAndFirst();
+    /**
+     * 입장순서를 보여준다.
+     *
+     * @return
+     */
+    public int getSeq(){
+        return bag.getSeq();
     }
 }

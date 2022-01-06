@@ -23,7 +23,7 @@ public class ReservationAgency {
             if(discountable)break;
         }
 
-        Money fee;
+        Money fee;-
         if(discountable){
             Money discountAmount = Money.ZERO;
             switch(movie.getMovieType()){
